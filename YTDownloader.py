@@ -37,7 +37,7 @@ def DownloadVideo():
             select = yt.streams.filter(only_audio=True).first()
 
         else:
-            ytdError.config(text="Paste Link again!!",fg="red")
+            ytdError.config(text="Paste Link again!!",fg="blue")
 
 
     #download function
@@ -69,7 +69,7 @@ saveLabel = Label(root,text="Save the Video File",font=("jost",15,"bold"))
 saveLabel.grid()
 
 
-saveEntry = Button(root,width=10,bg="red",fg="white",text="Choose Path",command=openLocation)
+saveEntry = Button(root,width=10,bg="blue",fg="white",text="Choose Path",command=openLocation)
 saveEntry.grid()
 
 
@@ -86,7 +86,7 @@ ytdchoices = ttk.Combobox(root,values=choices)
 ytdchoices.grid()
 
 
-downloadbtn = Button(root,text="Donwload",width=10,bg="red",fg="white",command=DownloadVideo)
+downloadbtn = Button(root,text="Donwload",width=10,bg="blue",fg="white",command=DownloadVideo)
 downloadbtn.grid()
 
 
